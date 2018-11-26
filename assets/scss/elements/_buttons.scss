@@ -1,0 +1,34 @@
+button {
+  -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
+  background-color: transparent;
+}
+
+a {
+  @include transition(color);
+  color: color(primary, base);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: color(primary, base);
+  }
+}
+
+.minus-button {
+  padding: .5rem 1rem;
+}
+
+.minus-button--send {
+  border: 0;
+  color: color(primary, base);
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    color: color(primary, dark);
+  }
+
+  @include transition(color);
+}

@@ -1,0 +1,1 @@
+onchange "assets/scss/" -- npm run build:css

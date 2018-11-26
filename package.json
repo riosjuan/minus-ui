@@ -1,0 +1,42 @@
+{
+  "name": "minus-ui",
+  "version": "1.0.0",
+  "description": "Minimal UI framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "./bin/scss",
+    "build:css": "./bin/build:css",
+    "browsersync": "./bin/browsersync",
+    "autoprefixer": "./bin/autoprefixer",
+    "watch:css": "./bin/watch:css",
+    "serve": "./bin/serve",
+    "sass:lint": "./bin/sass:lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riosjuan/minus-ui.git"
+  },
+  "author": "Juan Rios",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/riosjuan/minus-ui/issues"
+  },
+  "homepage": "https://github.com/riosjuan/minus-ui#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
+    "postcss-cli": "^4.1.1",
+    "prettier-eslint": "^8.8.2",
+    "sass-lint": "^1.12.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

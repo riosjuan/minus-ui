@@ -1,0 +1,4 @@
+// Hover transition for buttons and links
+@mixin transition ($property) {
+  transition: $property $transition-speed $transition-ease;
+}

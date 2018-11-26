@@ -1,0 +1,1 @@
+parallelshell "npm run browsersync" "npm run watch:css"

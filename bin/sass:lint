@@ -1,0 +1,1 @@
+sass-lint --config .sasslintrc 'assets/scss/**/*.scss' --verbose --no-exit

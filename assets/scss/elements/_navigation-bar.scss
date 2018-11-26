@@ -1,0 +1,44 @@
+
+.navigation-bar {
+  align-items: center;
+  background-color: color(primary, base);
+  color: color(text, primary-light);
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+.nav-items {
+  display: flex;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .nav-item {
+    display: inline-block;
+    height: inherit;
+  }
+}
+
+.nav-item {
+
+  a {
+    @include transition(background-color);
+    align-items: center;
+    color: color(text, primary-light);
+    display: inline-flex;
+    height: inherit;
+    padding: 0 1.5rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: color(primary, dark);
+    }
+  }
+
+  &--active {
+    background-color: color(primary, light);
+  }
+}
