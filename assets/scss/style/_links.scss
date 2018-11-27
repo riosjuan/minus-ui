@@ -1,0 +1,17 @@
+/* Links */
+
+.link {
+  @include transition(color);
+  color: color(primary, base);
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: color(primary, dark);
+  }
+
+  &--underlined {
+    text-decoration: underline;
+  }
+}

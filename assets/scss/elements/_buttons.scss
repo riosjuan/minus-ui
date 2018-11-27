@@ -1,34 +1,37 @@
-button {
+button,
+input[type="submit"],
+input[type="button"] {
   -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
-  background-color: transparent;
+  outline: 0;
 }
 
-a {
-  @include transition(color);
-  color: color(primary, base);
+
+.button {
+  border-radius: .25rem;
+  cursor: pointer;
+  font-weight: 500;
+  padding: .5rem 1rem;
   text-decoration: none;
 
-  &:hover,
-  &:focus {
+  &--primary {
+    @include transition(background-color);
+    background-color: color(primary, base);
+    color: color(text, primary-light);
+
+    &:hover {
+      background-color: color(primary, dark);
+    }
+  }
+
+  &--ghost {
+    @include transition(all);
+    background-color: transparent;
+    border: 1px solid color(primary, base);
     color: color(primary, base);
+
+    &:hover {
+      border-color: color(primary, dark);
+      color: color(primary, dark);
+    }
   }
-}
-
-.minus-button {
-  padding: .5rem 1rem;
-}
-
-.minus-button--send {
-  border: 0;
-  color: color(primary, base);
-  cursor: pointer;
-  outline: 0;
-  padding: 0;
-
-  &:hover,
-  &:focus {
-    color: color(primary, dark);
-  }
-
-  @include transition(color);
 }

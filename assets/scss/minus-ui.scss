@@ -4,6 +4,17 @@
 @import 'variables';
 @import 'mixins/mixins';
 
+/* Style */
+@import 'style/base';
 @import 'style/colors';
+@import 'style/typography';
+@import 'style/links';
+@import 'style/vertical-rhytm';
+
+/* Elements */
+@import 'elements/buttons';
+@import 'elements/swatches';
+
+
 @import 'elements/navigation-bar';
 @import 'layout/page-header';
