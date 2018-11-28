@@ -1,6 +1,5 @@
 @import '../../node_modules/normalize.css/normalize';
 
-//@import 'functions';
 @import 'mixins/mixins';
 @import 'variables';
 
@@ -17,6 +16,7 @@
 
 // Elements
 @import 'elements/buttons';
+@import 'elements/cards';
 @import 'elements/swatches';
 
 
