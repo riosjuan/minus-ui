@@ -1,3 +1,19 @@
+// Colors
+$minus-blue: #0083ff;
+$primary: $minus-blue;
+$secondary: #e61972;
+$black: #000;
+$white: #fff;
+
+// Text colors
+$text-primary-dark: lighten($black, 20%);
+$text-secondary-dark: lighten($black, 40%);
+$text-hint-dark: lighten($black, 72%);
+$text-primary-light: $white;
+$text-secondary-light: transparentize($white, .3);
+$text-header-dark: lighten($black, 20%);
+$text-header-light: $white;
+
 // Typography
 $sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 

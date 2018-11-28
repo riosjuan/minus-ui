@@ -1,0 +1,47 @@
+$spacing-directions: (
+  null,
+  top,
+  right,
+  bottom,
+  left,
+  vertical,
+  horizontal,
+);
+
+$spacing-properties: (
+  padding,
+  margin
+);
+
+$spacing-sizes: (
+  small: 1.5rem,
+  medium: 3rem,
+  large: 6rem,
+  none: 0
+);
+
+@each $property in $spacing-properties {
+  @each $direction in $spacing-directions {
+    @each $size, $value in $spacing-sizes {
+      @if ($direction == vertical) {
+        .#{$property}-#{$direction}--#{$size} {
+          #{$property}-bottom: $value;
+          #{$property}-top: $value;
+        }
+      } @else if ($direction == horizontal) {
+        .#{$property}-#{$direction}--#{$size} {
+          #{$property}-left: $value;
+          #{$property}-right: $value;
+        }
+      } @else if ($direction == null) {
+        .#{$property}-#{$size} {
+          #{$property}: $value;
+        }
+      } @else {
+        .#{$property}-#{$direction}-#{$size} {
+          #{$property}-#{$direction}: $value;
+        }
+      }
+    }
+  }
+}

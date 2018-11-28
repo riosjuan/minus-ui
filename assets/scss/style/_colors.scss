@@ -1,78 +1,65 @@
-// Variables
-
-// Colors
-$minus-blue: #0083ff;
-$primary: $minus-blue;
-$secondary: #e61972;
-$black: #000;
-$white: #fff;
-
-// Color variations
+// Palette generator
 $colors: (
-  background: $white,
-  background-highlighted: lighten($black, 98%),
-  divider: lighten($black, 92%),
-  border: lighten($black, 90%),
   primary:
   (
     base: $primary,
-    very-light: lighten($primary, 45%),
     light: lighten($primary, 15%),
     dark: darken($primary, 15%),
-    trans: transparentize($primary, .5)
   ),
   secondary:
   (
     base: $secondary,
-    very-light: lighten($secondary, 48%),
     light: lighten($secondary, 15%),
     dark: darken($secondary, 15%),
-    trans: transparentize($secondary, .5)
   ),
-  neutral:
+  grey:
   (
-    grey-80: lighten($black, 20%),
-    grey-70: lighten($black, 30%),
-    grey-60: lighten($black, 40%),
-    grey-50: lighten($black, 50%),
-    grey-40: lighten($black, 60%),
-    grey-30: lighten($black, 70%),
-    grey-20: lighten($black, 80%),
-    grey-10: lighten($black, 90%),
-    grey-5: lighten($black, 95%),
-    grey-2: lighten($black, 98%)
+    80: lighten($black, 20%),
+    70: lighten($black, 30%),
+    60: lighten($black, 40%),
+    50: lighten($black, 50%),
+    40: lighten($black, 60%),
+    30: lighten($black, 70%),
+    20: lighten($black, 80%),
+    10: lighten($black, 90%),
+    5: lighten($black, 95%),
+    2: lighten($black, 98%)
   ),
-  text:
-  (
-    primary-dark: lighten($black, 20%),
-    secondary-dark: lighten($black, 40%),
-    hint-dark: lighten($black, 72%),
-    primary-light: $white,
-    secondary-light: transparentize($white, .3),
-    header-dark: lighten($black, 20%),
-    header-light: $white
-  )
 );
 
 
-$primary: dark, light, very-light, trans;
-$neutral: grey-80, grey-70, grey-60, grey-50, grey-40, grey-30, grey-20, grey-10, grey-5, grey-2;
+// Colors
+
+@mixin color($attribute: 'color', $prefix: '-', $separator: '-', $base: 'base') {
+  @each $name, $color in $colors {
+    &#{$prefix}#{$name} {
+      @each $tone, $hex in $color {
+        &#{if($tone != $base, #{$separator}#{$tone}, '')} {
+          #{$attribute}: $hex;
+        }
+      }
+    }
+  }
+}
+
+.color {
+  @include color($prefix: '--');
+}
 
 // Background colors
-.bg-color-primary {
-  background-color: color(primary, base);
-}
 
-@each $item in $primary {
-  .bg-color-primary--#{$item} {
-    background-color: color(primary, #{$item});
+@mixin background-color($attribute: 'background-color', $prefix: '-', $separator: '-', $base: 'base') {
+  @each $name, $color in $colors {
+    &#{$prefix}#{$name} {
+      @each $tone, $hex in $color {
+        &#{if($tone != $base, #{$separator}#{$tone}, '')} {
+          #{$attribute}: $hex;
+        }
+      }
+    }
   }
 }
 
-
-@each $item in $neutral {
-  .bg-color--#{$item} {
-    background-color: color(neutral, #{$item});
-  }
+.bg-color {
+  @include background-color($prefix: '--');
 }
-

@@ -1,0 +1,14 @@
+// Measure
+// It's a typographic term for the length of a line of text
+
+.measure {
+  max-width: 38em;
+
+  &--wide {
+    max-width: 60em;
+  }
+
+  &--narrow {
+    max-width: 24em;
+  }
+}
