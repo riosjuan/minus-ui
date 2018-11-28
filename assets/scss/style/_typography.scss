@@ -1,4 +1,4 @@
-/* Typography */
+// Typography
 
 $base-font-size: 1rem; // Base font size
 $heading-scale: .5; // Scaling factor
@@ -9,40 +9,44 @@ $heading-scale: .5; // Scaling factor
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 1.5rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
+  margin: 0 0 1.5rem;
 }
 
 h1 {
-  line-height: 1.2;
   letter-spacing: -.1rem;
+  line-height: 1.2;
 }
 
 h2 {
-  line-height: 1.25;
   letter-spacing: -.1rem;
+  line-height: 1.25;
 }
 
 h3 {
-  line-height: 1.3;
   letter-spacing: -.1rem;
+  line-height: 1.3;
 }
 
 h4 {
-  line-height: 1.35;
   letter-spacing: -.08rem;
+  line-height: 1.35;
 }
 
 h5 {
-  line-height: 1.5;
   letter-spacing: -.05rem;
+  line-height: 1.5;
 }
 
 h6 {
-  line-height: 1.6;
   letter-spacing: 0;
+  line-height: 1.6;
 }
 
 p {

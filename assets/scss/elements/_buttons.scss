@@ -1,10 +1,7 @@
-button,
-input[type="submit"],
-input[type="button"] {
+button {
   -webkit-appearance: none; // sass-lint:disable-line no-vendor-prefixes
   outline: 0;
 }
-
 
 .button {
   border-radius: .25rem;
