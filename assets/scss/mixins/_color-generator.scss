@@ -1,0 +1,25 @@
+// Generates .color--color-name
+@mixin color($attribute: 'color', $prefix: '-', $separator: '-', $base: 'base') {
+  @each $name, $color in $colors {
+    &#{$prefix}#{$name} {
+      @each $tone, $hex in $color {
+        &#{if($tone != $base, #{$separator}#{$tone}, '')} {
+          #{$attribute}: $hex;
+        }
+      }
+    }
+  }
+}
+
+// Generates .bg-color--color-name
+@mixin background-color($attribute: 'background-color', $prefix: '-', $separator: '-', $base: 'base') {
+  @each $name, $color in $colors {
+    &#{$prefix}#{$name} {
+      @each $tone, $hex in $color {
+        &#{if($tone != $base, #{$separator}#{$tone}, '')} {
+          #{$attribute}: $hex;
+        }
+      }
+    }
+  }
+}

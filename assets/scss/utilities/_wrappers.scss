@@ -1,0 +1,15 @@
+.wrapper {
+  margin: 0 auto;
+
+  &--narrow {
+    max-width: 48rem;
+  }
+
+  &--regular {
+    max-width: 60rem;
+  }
+
+  &--wide {
+    max-width: 80rem;
+  }
+}

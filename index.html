@@ -5,23 +5,150 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>minus UI style guide</title>
   <link rel="stylesheet" href='assets/css/minus-ui.css'>
 </head>
 
-<body>
-  <nav class="navigation-bar">
-    <h6>Logo</h6>
-    <ul class="nav-items">
-      <li class="nav-item nav-item--active"><a href="/">Home</a></li>
-      <li class="nav-item"><a href="program.html">Program</a></li>
-      <li class="nav-item"><a href="">Speakers</a></li>
-    </ul>
-  </nav>
-  <div class="page-header">
-    <h1>Event App</h1>
-    <h4>Welcome to your Event App</h4>
+<body class="padding-vertical--large padding-horizontal--small">
+<div class="margin-bottom-large">
+  <h1 class="margin-bottom-none">-minus UI</h1>
+  <h5 class="color--grey-40">A simple extensible framework</h5>
+</div>
+
+<section>
+  <h3>Colors</h3>
+  <div>
+    <h4>Primary</h4>
+    <div class="swatch bg-color--primary"></div>
+    <h5>Variations</h5>
+    <div class="swatch bg-color--primary-dark"></div>
+    <div class="swatch bg-color--primary-light"></div>
   </div>
+  <div>
+    <h4>Secondary</h4>
+    <div class="swatch bg-color--secondary"></div>
+    <h5>Variations</h5>
+    <div class="swatch bg-color--secondary-dark"></div>
+    <div class="swatch bg-color--secondary-light"></div>
+  </div>
+  <div>
+    <h4>Greys</h4>
+    <div class="swatch bg-color--grey-80"></div>
+    <div class="swatch bg-color--grey-70"></div>
+    <div class="swatch bg-color--grey-60"></div>
+    <div class="swatch bg-color--grey-50"></div>
+    <div class="swatch bg-color--grey-40"></div>
+    <div class="swatch bg-color--grey-30"></div>
+    <div class="swatch bg-color--grey-20"></div>
+    <div class="swatch bg-color--grey-10"></div>
+    <div class="swatch bg-color--grey-5"></div>
+    <div class="swatch bg-color--grey-2"></div>
+  </div>
+</section>
+
+
+<h2>Typography</h2>
+<section>
+  <h3>Headings</h3>
+  <div class="padding-small bg-color--grey-2">
+    <h1>Heading h1</h1>
+    <h2>Heading h2</h2>
+    <h3>Heading h3</h3>
+    <h4>Heading h4</h4>
+    <h5>Heading h5</h5>
+    <h6 class="margin-bottom-none">Heading h6</h6>
+  </div>
+</section>
+<section>
+  <h3>Paragraph</h3>
+  <h4>Regular</h4>
+  <p class='measure'>
+    Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel
+    scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Maecenas sed
+    diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus
+    posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+    lacinia bibendum nulla sed consectetur.
+  </p>
+  <h4>Wide</h4>
+  <p class="measure--wide">
+    Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel
+    scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Maecenas sed
+    diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus
+    posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+    lacinia bibendum nulla sed consectetur.
+  </p>
+  <h4>Narrow</h4>
+  <p class="measure--narrow">
+    Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel
+    scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper. Maecenas sed
+    diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus
+    posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean
+    lacinia bibendum nulla sed consectetur.
+  </p>
+</section>
+
+<section>
+  <h3>Links</h3>
+  <p><a class="link" href="#">Basic link</a></p>
+  <p><a class="link link--underlined" href="#">Underlined link</a></p>
+</section>
+
+<section>
+  <h3>Buttons</h3>
+  <div>
+    <h4>Primary button</h4>
+    <a class="button button--primary" href="">Anchor element</a>
+    <button class="button button--primary">Button element</button>
+    <input class="button button--primary" type="submit" value="Input type submit">
+    <input class="button button--primary" type="button" value="Input type button">
+  </div>
+  <div>
+    <h4>Ghost button</h4>
+    <a class="button button--ghost" href="">Anchor element</a>
+    <button class="button button--ghost">Button element</button>
+    <input class="button button--ghost" type="submit" value="Input type submit">
+    <input class="button button--ghost" type="button" value="Input type button">
+  </div>
+</section>
+
+<section>
+  <h3>Cards</h3>
+  <div class="cards">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1464846539327-f23d0038c19e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1cc95ad6951f4d987a304a5ab098e965&auto=format&fit=crop&w=2550&q=80" alt="picture">
+      </div>
+      <h4>Nature</h4>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <a class="button button--ghost" href="#">Discover</a>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1478382188900-5bb598fe27d3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ab478140244c6a2f69789d4b6f6ef87&auto=format&fit=crop&w=2551&q=80" alt="picture">
+      </div>
+      <h4>Nature</h4>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <a class="button button--ghost" href="#">Read more</a>
+    </div>
+    <div class="card">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1543339165-5d92119df656?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82fa1ac8f26dc85b5c4b1bb95b7bf26a&auto=format&fit=crop&w=1936&q=80" alt="picture">
+      </div>
+      <h4>Nature</h4>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+      <a class="button button--ghost" href="#">Explore</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>More examples</h2>
+  <a class="button button--primary" href="/event-app.html" target="_blank">Event app</a>
+</section>
+
+<div>
+
+</div>
 </body>
 
 </html>
