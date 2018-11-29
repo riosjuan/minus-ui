@@ -1,6 +1,7 @@
 $size: 6rem;
 
 .swatch {
+  border: 1px solid transparentize($black, .98);
   border-radius: 100%;
   display: inline-block;
   height: $size;

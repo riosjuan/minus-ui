@@ -38,7 +38,7 @@ $spacing-sizes: (
           #{$property}: $value;
         }
       } @else {
-        .#{$property}-#{$direction}-#{$size} {
+        .#{$property}-#{$direction}--#{$size} {
           #{$property}-#{$direction}: $value;
         }
       }

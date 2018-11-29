@@ -1,0 +1,15 @@
+// Hides element when viewport is smaller than breakpoint
+.hide-small {
+  @include for-large($breakpoint) {
+    display: block;
+  }
+  display: none;
+}
+
+// Shows element when viewport is smaller than breakpoint
+.show-small {
+  @include for-large($breakpoint) {
+    display: none;
+  }
+  display: block;
+}

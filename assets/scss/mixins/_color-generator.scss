@@ -1,4 +1,4 @@
-// Generates .color--color-name
+// Generates .color--color-name class
 @mixin color($attribute: 'color', $prefix: '-', $separator: '-', $base: 'base') {
   @each $name, $color in $colors {
     &#{$prefix}#{$name} {
@@ -11,7 +11,7 @@
   }
 }
 
-// Generates .bg-color--color-name
+// Generates .bg-color--color-name class
 @mixin background-color($attribute: 'background-color', $prefix: '-', $separator: '-', $base: 'base') {
   @each $name, $color in $colors {
     &#{$prefix}#{$name} {

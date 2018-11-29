@@ -1,4 +1,3 @@
-
 .navigation-bar {
   align-items: center;
   background-color: $primary;
@@ -11,34 +10,11 @@
 
 .nav-items {
   display: flex;
-  height: 100%;
   list-style: none;
   margin: 0;
   padding: 0;
 
   .nav-item {
-    display: inline-block;
-    height: inherit;
-  }
-}
-
-.nav-item {
-
-  a {
-    @include transition(background-color);
-    align-items: center;
-    color: $text-primary-light;
-    display: inline-flex;
-    height: inherit;
-    padding: 0 1.5rem;
-    text-decoration: none;
-
-    &:hover {
-      background-color: darken($primary, 15%);
-    }
-  }
-
-  &--active {
-    background-color: color(primary, light);
+    margin: 0 0 0 1.5rem;
   }
 }

@@ -33,4 +33,18 @@ button {
       color: darken($primary, 15%);
     }
   }
+
+  // Button for the navigation bar
+  &--nav {
+    @include transition(all);
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    color: $text-primary-light;
+    padding: .5rem .125rem;
+
+    &:hover {;
+      border-color: $white;
+    }
+  }
 }

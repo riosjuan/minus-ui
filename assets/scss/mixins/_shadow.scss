@@ -1,0 +1,6 @@
+// Evaluates weather box-shadow is enabled or disabled and adds property when enabled is true
+@mixin box-shadow($shadow...) {
+  @if $shadows-enabled {
+    box-shadow: $shadow;
+  }
+}
